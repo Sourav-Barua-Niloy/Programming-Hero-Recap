@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+/* Hero Section Design Here */
+
+.hero {
+    /* background-color: red; */
+    background-image: url(./Images/Coderscover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+}
+
+div h1 {
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    padding-top: 55px;
+    font-weight: 700;
+}
+
+/* article Section Design Here */
+.articles{
+    margin: 40px;
+    border: 10px solid #a29bfe;
+    border-radius: 20px;
+}
+
+.articles .articles-heading{
+    font-size: 40px;
+    color: #6c5ce7;
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #6c5ce7;
+}
+
+.articles .articles-content {
+    background: linear-gradient(rgb(245, 23, 60), rgb(100, 100, 183));
+    color: aliceblue;
+    padding: 20px;
+}
+
+/* feature div */
+
+.feature {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    border: 10px dashed salmon;
+}
+
+.feature .feature-image img{
+    width: 300px;
+    height: 200px;
+}
