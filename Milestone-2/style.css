@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+.container{
+    border: 1px solid red;
+    height: 200px;
+    background-color: red;
+    width: 100%;
+    margin-left: 10px;
+}
+.container-2{
+    border: 1px solid red;
+    background-color: red; 
+    width: 100%;
+    object-fit: cover;
+} 
+*/
+
+/* ! Weather Styles start from here for making a banner  */
+
+.banner {
+    border: 5px solid blue;
+    min-height: 200px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.image-container {
+    border: 2px solid red;
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.image1 {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-container {
+    border: 2px solid green;
+    width: 45%;
+}
