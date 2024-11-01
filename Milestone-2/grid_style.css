@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Honk", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+/* id start */
+#item-1 {
+    background-color: aqua;
+
+}
+
+#item-2 {
+    background-color: green;
+}
+
+#item-3 {
+    background-color: yellow;
+}
+
+#item-4 {
+    background-color: orange;
+}
+
+#item-5 {
+    background-color: rgb(255, 0, 221);
+}
+
+#item-6 {
+    background-color: rgb(166, 255, 0);
+}
+
+/* id end */
+
+/* ! grid style start */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* ! grid style end */
+
+
+/* Style new */
+.container-2 {
+    background-color: bisque;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5rem auto 5rem;
+
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f"
+    ;
+}
+
+.header {
+    background-color: aqua;
+    grid-area: h;
+}
+
+.menu {
+    background-color: aquamarine;
+    grid-area: m;
+}
+.content_class{
+    border: 2px solid rgb(255, 0, 0) ;
+    /* width: max-content; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: c;
+}
+.content-1 {
+    background-color: cadetblue;
+
+}
+.content-2 {
+    background-color: rgb(125, 147, 148);
+    grid-area: c;
+}.content-3 {
+    background-color: rgb(11, 65, 67);
+}.content-4 {
+    background-color: rgba(167, 202, 11, 0.577);
+    
+}
+
+.footer {
+    background-color: chartreuse;
+    grid-area: f;
+}
+
+/* New design start */
+.container-3{
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid black;
+    /* grid-template-columns: repeat(auto-fit, min-max( 1rem, 1fr ));
+    grid-template-rows: repeat(1, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(5,90px);
+    grid-template-rows: repeat(2,90px);
+    gap: 3px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.number{
+    border: 1px solid #ccc;
+}
+/* New design end */
